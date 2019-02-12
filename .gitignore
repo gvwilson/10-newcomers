@@ -3,6 +3,7 @@
 *.blg
 *.log
 *.log
+*.out
 *.pdf
 *~
 .DS_Store
