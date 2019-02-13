@@ -1,8 +1,9 @@
 \documentclass[10pt,letterpaper]{article}
 \include{settings}
 
-%% Define per-paper macros.
 \newcommand{\rulemajor}[1]{\section{#1}}
+\newcommand{\withurl}[2]{{#1}\footnote{{\texttt{#2}}}}
+
 \begin{document}
 \vspace*{0.2in}
 
@@ -40,7 +41,7 @@ FIXME: one-paragraph summary.
 
 \section*{Introduction}
 
-According to \cite{b:wenger-cop}, communities of practice have three key characteristics:
+According to \cite{wenger1999}, communities of practice have three key characteristics:
 
 \begin{enumerate}
 
@@ -54,14 +55,14 @@ According to \cite{b:wenger-cop}, communities of practice have three key charact
 
 \rulemajor{Rule 1: Make governance explicit.}
 
-Raymond's ``The Cathedral and the Bazaar'' (http://www.catb.org/esr/writings/cathedral-bazaar/)
+Raymond's ``The Cathedral and the Bazaar'' \cite{raymond2001}
 was one of the most influential documents in the history of open source.
 It described an egalitarian world in which everyone could contribute equally to the greater good,
-but as Bezroukov pointed out in ``A Second Look at the Cathedral and the Bazaar'' (https://firstmonday.org/article/view/708/618),
+but as Bezroukov pointed out \cite{bezroukov1999},
 that description ignored the realities of how power arises,
 becomes concentrated in a few hands,
 and is then used to perpetuate itself.
-Bezroukov's criticism drew on Freeman's influential 1970 essay ``The Tyranny of Structurelessness'' (https://www.jofreeman.com/joreen/tyranny.htm),
+Bezroukov's criticism drew on Freeman's influential essay ``The Tyranny of Structurelessness'' \cite{freeman1972},
 which explained how an apparent lack of structure in organizations ``{\ldots}too often disguised an informal,
 unacknowledged and unaccountable leadership that was all the more pernicious because its very existence was denied.''
 
@@ -69,15 +70,14 @@ Two decades later,
 we can see how unequal and unwelcoming the supposedly egalitarian ``bazaar'' of open source can be
 if authority lies with those willing to shout loudest and longest.
 Making a project's governance explicit is therefore essential to making that project inviting and welcoming to newcomers with diverse backgrounds.
-The most basic way to do this is to adopt something like the Contributor Covenant (https://www.contributor-covenant.org/),
+The most basic way to do this is to adopt something like the \withurl{Contributor Covenant}{https://www.contributor-covenant.org/},
 which lays out groundrules for interpersonal interaction within the project.
 At the opposite end,
 large, well-established projects that incorporate as non-profits are required to promulgate bylaws,
-such as those for the Python Software Foundation (https://www.python.org/psf/bylaws/).
+such as those for the \withurl{Python Software Foundation}{https://www.python.org/psf/bylaws/}.
 
 What lies between these two extremes is less well documented,
-but the ``Social and Political Infrastructure'' chapter of Fogel's \emph{Producing Open Source Software} (https://producingoss.com/en/producingoss.html)
-is a good place to start.
+but the ``Social and Political Infrastructure'' chapter of \cite{fogel2005} is a good place to start.
 It describes two models:
 
 \begin{itemize}
@@ -91,7 +91,7 @@ It describes two models:
   organizations may hold a vote.
   Organizations should decide who is and isn't eligible to vote well in advance of the emergence of issues requiring votes,
   since tempers may already been running hot by the time this point is reached.
-  In the Carpentries (https://docs.carpentries.org/topic\_folders/governance/index.html),
+  In \withurl{the Carpentries}{https://docs.carpentries.org/topic\_folders/governance/index.html},
   for example,
   anyone who satisfies any of the conditions below is eligible to run for a seat on the Executive Council and to vote in those elections:
   \begin{enumerate}
@@ -131,16 +131,16 @@ the project should explicitly state what are the different types of skills requi
 This information should be easily accessible and guide new members to the tasks they may handle.
 LibreOffice,
 for example,
-provides a way for developers to access the available tasks filtering them by required skills and difficulty
-(https://wiki.documentfoundation.org/Development/EasyHacks/by\_Required\_Skill).
+provides a way for developers to filter available tasks by
+\withurl{required skills and difficulty}{https://wiki.documentfoundation.org/Development/EasyHacks/by\_Required\_Skill}.
 
 Secondly,
 from the developers perspective,
 there should be ways to enable developers to evaluate their skills.
 In addition to a self-evaluation,
 tools to support obtaining information from previous contributions may benefit newcomers and projects.
-Existing tools like ``My GitHub Resume'' (https://resume.github.io/),
-and academic approaches like Visual Resume \cite{b:sarma},
+Existing tools like \withurl{My GitHub Resume}{https://resume.github.io/},
+and academic approaches like Visual Resume \cite{sarma2016},
 may help to assess the developers' skills.
 Once projects have it clear what are the required skills to contribute and developers' skills are identified,
 it is possible to match them,
@@ -151,9 +151,26 @@ and in terms of ``what tasks I may be able to work on''.
 
 \rulemajor{Rule 3: Develop forms of Legitimate Peripheral Participation}
 
-Legitimate peripheral participation(LPP) provides newcomers with opportunities to ease into the platform and learn the norms of the community through low-risk tasks. That is, tasks that will not interrupt the community’s utility. In order to provide successful LPP newcomers with an opportunity to engage that adds value to the community. Likewise, in communities, such as GitHub, commiting code and submitting pull request to a community are the main interactions on engaging. However, these tasks can be socially daunting for newcomers~\cite{steinmacher2015social}. One form of encouraging LPP on this platform could be to encourage newcomers to add an issue to a repository when they notice a bug. Another form of LPP would be to join the dialogue on a recently submitted pull request. These provide newcomers interactive opportunities to learn the norms of the community. 
+Legitimate peripheral participation (LPP) provides newcomers with opportunities to ease into the platform and learn the norms of the community through low-risk tasks
+(that is, tasks that will not interrupt the community’s utility).
+In order to be successful LPP must give newcomers an opportunity to engage in ways that add value to the community.
+However,
+in communities such as GitHub,
+core activites such as commiting code and submitting pull requests can be socially daunting for newcomers~\cite{steinmacher2015}.
+One form of encouraging LPP on this platform could be to encourage newcomers to add an issue to a repository when they notice a bug.
+Another form of LPP would be to join the dialogue on a recently submitted pull request.
+These provide newcomers interactive opportunities to learn the norms of the community. 
 
-Building multiple ways of participating in a community demonstrates the variety of approaches newcomers can take to join the community. This further demonstrates that there’s not just one way to make technical contributions.  Take Stack Overflow for instance, the main form of interaction in the community is to ask a question and posting an answer. For some users, engaging in that type of interaction can present barriers including an \emph{Intimidating Community Size} and \emph{Fear of Negative Feedback}~\cite{ford2016paradise}. Thus, it is important to provide additional forms of participation. On Stack Overflow this is demonstrated through the ability to edit questions and answer without the restriction of reputation points.  Developing pathway to participation can decrease the presence of barriers. In studying the evolution of how content is formed in these communities~\cite{baltes2018evolution}, newcomers can better understand the norms of a community and the best way to contribute~\cite{ford2018wedont}.
+Building multiple ways of participating in a community demonstrates the variety of approaches newcomers can take to join the community.
+This further demonstrates that there’s not just one way to make technical contributions.
+For example,
+the main form of interaction in the community on Stack Overflow is to ask a question and posting an answer.
+For some users, engaging in that type of interaction can present barriers including an intimidating community size and fear of negative feedback~\cite{ford2016}.
+Thus, it is important to provide additional forms of participation.
+On Stack Overflow this is demonstrated through the ability to edit questions and answer without the restriction of reputation points.
+Developing pathway to participation can decrease the presence of barriers.
+In studying the evolution of how content is formed in these communities~\cite{baltes2018},
+newcomers can better understand the norms of a community and the best way to contribute~\cite{ford2018}.
 
 \rulemajor{Rule 4}
 
@@ -168,14 +185,14 @@ it is likely more constructive and efficient to teach and reward desired behavio
 than to change problematic behaviors down the line.
 Project decision-makers can prompt desired practices in open source software development
 by providing newcomers with ``how to contribute'' guidelines in easy-to-find, readily-available places.
-Many projects follow GitHub's recommendation for placing such information
-in a CONTRIBUTING.md file (https://help.github.com/articles/setting-guidelines-for-repository-contributors/).
+Many projects follow \withurl{GitHub's recommendation}{https://help.github.com/articles/setting-guidelines-for-repository-contributors/}
+for placing such information in a CONTRIBUTING.md file.
 Other projects,
-such as the Apache Open Office Suite (https://openoffice.apache.org/orientation/intro-contributing.html)
-and rOpenSci (https://ropensci.github.io/dev\_guide/, Chapter 14: Contributing Guide),
+such as the \withurl{Apache Open Office Suite}{https://openoffice.apache.org/orientation/intro-contributing.html}
+and \withurl{rOpenSci}{https://ropensci.github.io/dev\_guide/, Chapter 14: Contributing Guide},
 provide text-based newcomer manuals and learning modules accessed through a web interface.
 Still others take a more interactive approach,
-such as the GNOME project's Newcomers Guide (https://wiki.gnome.org/Newcomers/SubmitContribution),
+such as the \withurl{GNOME project's Newcomers Guide}{https://wiki.gnome.org/Newcomers/SubmitContribution},
 which walks potential contributors through the contribution pipeline:
 choosing a project,
 acquiring and installing the necessary computing tools,
@@ -187,8 +204,8 @@ and following up on feedback.
 no matter the form of presentation,
 serve several additional purposes alongside describing expected contribution behaviors.
 Contribution guidelines offer a centralized, well-organized description of resources
-that a newcomer can consult while learning to navigate the project's technical and social environments \cite{b:zanatta2017}.
-Indeed, the social environment is a key constraint on newcomer behaviors \cite{b:steinmacher};
+that a newcomer can consult while learning to navigate the project's technical and social environments \cite{zanatta2017}.
+Indeed, the social environment is a key constraint on newcomer behaviors \cite{steinmacher2015};
 explicitly-stated definitions of contribution expectations can ease newcomers' hesitancies
 about whether or not their work is sufficient and suitable for the project.
 Relatedly,
