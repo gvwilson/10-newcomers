@@ -53,7 +53,48 @@ According to \cite{wenger1999}, communities of practice have three key character
 
 \end{enumerate}
 
-\rulemajor{Rule 1: Make governance explicit.}
+\rulemajor{Rule 1: Have and enforce a Code of Conduct.}
+
+The rules presented here focus on strategies that promote a welcoming, healthy environment for newcomers.
+It is also important, though, to explicitly codify guidelines for all members of the community to follow
+in fostering such an environment.
+An increasingly popular strategy for doing so is to adopt and publish a Code of Conduct.
+
+Many projects--e.g., rOpenSci \cite{ropensci-coc}, NumPy \cite{numpy-coc}, and Project Jupyter \cite{jupyter-coc}--have adopted Codes of Conduct
+based on the Contributor Covenant \cite{covenant}
+or other frameworks such as SciPy's Code of Conduct \cite{scipy-coc}.
+However, several questions around reporting violations and enforcing rules remain open.
+What is the appropriate mechanism for reporting violations?
+Who should receive reports?
+What types of actions can projects take when a member of the community violates the code?
+Projects may vary in how they address these questions based on characteristics of size, technology choices, or human resources
+(such as the presence of a community manager).
+However, some must-haves are clear based on our collective experience and code of conduct guides \cite{aurora2019}.
+
+For instance,
+projects should designate at least one independent party
+(i.e., an individual not employed by or otherwise deeply tied the project)
+to receive and review reports.
+An independent party offers a degree of objectivity
+and can help to protect reporters from hesitating to report out of fear of retribution or damage to their reputation.
+When possible,
+the independent party should be part of a larger code of conduct committee made up of several people with varied characteristics
+(e.g., gender identity, race, ethnicity, roles in the community).
+Any member of the committee implicated in the incident should be recused from reviewing the violations.
+
+Project leaders should also develop some enforcement mechanisms and,
+when safe for the reporter,
+publicize the enforcement decision.
+Enforcing the code and announcing decisions are critical;
+otherwise,
+the community will quickly recognize the code as meaningless.
+Committees can consider several courses of action once investigations are complete:
+verbal or written warnings,
+limits on access to project communication avenues (e.g., Slack channels or mailing lists),
+or in severe cases,
+suspension or expulsion from contributing to the project.
+
+\rulemajor{Rule 2: Make governance explicit.}
 
 Raymond's ``The Cathedral and the Bazaar'' \cite{raymond2001}
 was one of the most influential documents in the history of open source.
@@ -70,11 +111,11 @@ Two decades later,
 we can see how unequal and unwelcoming the supposedly egalitarian ``bazaar'' of open source can be
 if authority lies with those willing to shout loudest and longest.
 Making a project's governance explicit is therefore essential to making that project inviting and welcoming to newcomers with diverse backgrounds.
-The most basic way to do this is to adopt something like the \withurl{Contributor Covenant}{https://www.contributor-covenant.org/},
+The most basic way to do this is to adopt something like the Contributor Covenant \cite{covenant},
 which lays out groundrules for interpersonal interaction within the project.
 At the opposite end,
 large, well-established projects that incorporate as non-profits are required to promulgate bylaws,
-such as those for the \withurl{Python Software Foundation}{https://www.python.org/psf/bylaws/}.
+such as those for the Python Software Foundation \cite{psf-bylaws}.
 
 What lies between these two extremes is less well documented,
 but the ``Social and Political Infrastructure'' chapter of \cite{fogel2005} is a good place to start.
@@ -91,9 +132,10 @@ It describes two models:
   organizations may hold a vote.
   Organizations should decide who is and isn't eligible to vote well in advance of the emergence of issues requiring votes,
   since tempers may already been running hot by the time this point is reached.
-  In \withurl{the Carpentries}{https://docs.carpentries.org/topic\_folders/governance/index.html},
+  In the Carpentries,
   for example,
-  anyone who satisfies any of the conditions below is eligible to run for a seat on the Executive Council and to vote in those elections:
+  anyone who satisfies any of the conditions below is eligible to run for a seat on the Executive Council
+  and to vote in those elections \cite{carpentries-bylaws}:
   \begin{enumerate}
     \item everyone who has completed instructor certification in the preceding year;
     \item everyone who has completed certification in the last two years and taught at least one workshop;
@@ -110,7 +152,7 @@ Should any reader wish to make a significant non-coding contribution to open sou
 a series of three or four successively more elaborate models for governance,
 each annotated to explain when and why the extra complexity should be added, would be extremely valuable.
 
-\rulemajor{Rule 2: Help potential contributors evaluate if the project is a good fit.}
+\rulemajor{Rule 3: Help potential contributors evaluate if the project is a good fit.}
 
 The first step that newcomers take when they are willing to contribute is to choose a project.
 Behind this step,
@@ -149,7 +191,7 @@ and in terms of ``what tasks I may be able to work on''.
 
 \includegraphics[width=5.0cm]{contributions.png}
 
-\rulemajor{Rule 3: Develop forms of Legitimate Peripheral Participation}
+\rulemajor{Rule 4: Develop forms of Legitimate Peripheral Participation}
 
 Legitimate peripheral participation (LPP) provides newcomers with opportunities to ease into the platform and learn the norms of the community through low-risk tasks
 (that is, tasks that will not interrupt the community’s utility).
@@ -172,11 +214,13 @@ Developing pathway to participation can decrease the presence of barriers.
 In studying the evolution of how content is formed in these communities~\cite{baltes2018},
 newcomers can better understand the norms of a community and the best way to contribute~\cite{ford2018}.
 
-\rulemajor{Rule 4}
-
 \rulemajor{Rule 5}
 
+FIXME
+
 \rulemajor{Rule 6}
+
+FIXME
 
 \rulemajor{Rule 7: Provide an easy, complete, and up-to-date guide to contributing.}
 
@@ -185,14 +229,12 @@ it is likely more constructive and efficient to teach and reward desired behavio
 than to change problematic behaviors down the line.
 Project decision-makers can prompt desired practices in open source software development
 by providing newcomers with ``how to contribute'' guidelines in easy-to-find, readily-available places.
-Many projects follow \withurl{GitHub's recommendation}{https://help.github.com/articles/setting-guidelines-for-repository-contributors/}
-for placing such information in a CONTRIBUTING.md file.
+Many projects follow GitHub's recommendation for placing such information in a CONTRIBUTING.md file \cite{github-rec}.
 Other projects,
-such as the \withurl{Apache Open Office Suite}{https://openoffice.apache.org/orientation/intro-contributing.html}
-and \withurl{rOpenSci}{https://ropensci.github.io/dev\_guide/, Chapter 14: Contributing Guide},
-provide text-based newcomer manuals and learning modules accessed through a web interface.
+such as the Apache Open Office Suite and rOpenSci,
+provide text-based newcomer manuals and learning modules accessed through a web interface \cite{apache-guidelines,ropensci-guidelines}.
 Still others take a more interactive approach,
-such as the \withurl{GNOME project's Newcomers Guide}{https://wiki.gnome.org/Newcomers/SubmitContribution},
+such as the GNOME project's Newcomers Guide \cite{gnome-newcomers},
 which walks potential contributors through the contribution pipeline:
 choosing a project,
 acquiring and installing the necessary computing tools,
@@ -229,22 +271,13 @@ contribution guidelines should be treated as living, evolving documents rather t
 
 \rulemajor{Rule 8}
 
-\rulemajor{Rule 9: Keep your house in order.}
+FIXME
 
-There is no point in inviting people to be a part of a dysfunctional or toxic community,
-nor is there any point in making such a community more accessible or participatory,
-if your goals are to grow your community and increase involvement in your project.
-Likewise,
-the work of creating a code of conduct will be wasted
-if the enforcement process is seen to be toothless or selective.
+\rulemajor{Rule 9}
 
-Whatever our intentions,
-our commitment to our goals and values is seen through our actions.
-If new participants to our community are disciplined for the same behavior
-for which longtime participants get a pass,
-then you should expect any community-building efforts to fail.
+FIXME
 
-\rulemajor{Rule 10: follow up on success.}
+\rulemajor{Rule 10: Follow up on success.}
 
 Once a new contributor has been able to carry their first contribution over the line, 
 you're likely to have have a sense of their strenghts and weakensses,
@@ -261,6 +294,19 @@ it's important that this be an invitation,
 not a suggestion or demand. 
 
 \section*{Conclusion}
+
+There is no point in inviting people to be a part of a dysfunctional or toxic community,
+nor is there any point in making such a community more accessible or participatory,
+if your goals are to grow your community and increase involvement in your project.
+Likewise,
+the work of creating a code of conduct will be wasted
+if the enforcement process is seen to be toothless or selective.
+
+Whatever our intentions,
+our commitment to our goals and values is seen through our actions.
+If new participants to our community are disciplined for the same behavior
+for which longtime participants get a pass,
+then you should expect any community-building efforts to fail.
 
 \bibliography{rules}
 
