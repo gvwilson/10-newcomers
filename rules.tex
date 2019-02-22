@@ -1,6 +1,8 @@
 \documentclass[10pt,letterpaper]{article}
 \include{settings}
 
+
+
 \newcommand{\rulemajor}[1]{\section{#1}}
 \newcommand{\withurl}[2]{{#1}\footnote{{\texttt{#2}}}}
 
@@ -19,13 +21,15 @@
 {Jesse Mostipak}\textsuperscript{4{\ddag}},
 {Dan Sholler}\textsuperscript{5{\ddag}},
 {Greg~Wilson}\textsuperscript{1{\ddag}*}
+{Igor Steinmacher}\textsuperscript{6{\ddag}}
 \\
 \bigskip
 \textbf{1} RStudio, Inc. / \{mara.averick, greg.wilson\}@rstudio.com \\
 \textbf{2} AFFILIATION / EMAIL \\
 \textbf{3} AFFILIATION / EMAIL \\
 \textbf{4} AFFILIATION / EMAIL \\
-\bigskip
+\textbf{5} AFFILIATION / EMAIL \\
+\textbf{6} Northern Arizona University/ igor.steinmacher@nau.edu \\\bigskip
 * Corresponding author. \\
 \bigskip
 {\ddag} These authors contributed equally to this work.
@@ -41,7 +45,7 @@ FIXME: one-paragraph summary.
 
 \section*{Introduction}
 
-According to \cite{wenger1999}, communities of practice have three key characteristics:
+According to Wenger~\cite{wenger1999}, communities of practice have three key characteristics:
 
 \begin{enumerate}
 
@@ -60,16 +64,16 @@ It is also important, though, to explicitly codify guidelines for all members of
 in fostering such an environment.
 An increasingly popular strategy for doing so is to adopt and publish a Code of Conduct.
 
-Many projects--e.g., rOpenSci \cite{ropensci-coc}, NumPy \cite{numpy-coc}, and Project Jupyter \cite{jupyter-coc}--have adopted Codes of Conduct
-based on the Contributor Covenant \cite{covenant}
-or other frameworks such as SciPy's Code of Conduct \cite{scipy-coc}.
+Many projects--e.g., rOpenSci~\cite{ropensci-coc}, NumPy~\cite{numpy-coc}, and Project Jupyter~\cite{jupyter-coc}--have adopted Codes of Conduct
+based on the Contributor Covenant~\cite{covenant}
+or other frameworks such as SciPy's Code of Conduct~\cite{scipy-coc}.
 However, several questions around reporting violations and enforcing rules remain open.
 What is the appropriate mechanism for reporting violations?
 Who should receive reports?
 What types of actions can projects take when a member of the community violates the code?
 Projects may vary in how they address these questions based on characteristics of size, technology choices, or human resources
 (such as the presence of a community manager).
-However, some must-haves are clear based on our collective experience and code of conduct guides \cite{aurora2019}.
+However, some must-haves are clear based on our collective experience and code of conduct guides~\cite{aurora2019}.
 
 For instance,
 projects should designate at least one independent party
@@ -78,7 +82,7 @@ to receive and review reports.
 An independent party offers a degree of objectivity
 and can help to protect reporters from hesitating to report out of fear of retribution or damage to their reputation.
 When possible,
-the independent party should be part of a larger code of conduct committee made up of several people with varied characteristics
+the independent party should be part of a more extensive code of conduct committee made up of several people with varied characteristics
 (e.g., gender identity, race, ethnicity, roles in the community).
 Any member of the committee implicated in the incident should be recused from reviewing the violations.
 
@@ -96,14 +100,14 @@ suspension or expulsion from contributing to the project.
 
 \rulemajor{Rule 2: Make governance explicit.}
 
-Raymond's ``The Cathedral and the Bazaar'' \cite{raymond2001}
+Raymond's ``The Cathedral and the Bazaar''~\cite{raymond2001}
 was one of the most influential documents in the history of open source.
 It described an egalitarian world in which everyone could contribute equally to the greater good,
-but as Bezroukov pointed out \cite{bezroukov1999},
+but as Bezroukov pointed out~\cite{bezroukov1999},
 that description ignored the realities of how power arises,
 becomes concentrated in a few hands,
 and is then used to perpetuate itself.
-Bezroukov's criticism drew on Freeman's influential essay ``The Tyranny of Structurelessness'' \cite{freeman1972},
+Bezroukov's criticism drew on Freeman's influential essay ``The Tyranny of Structurelessness''~\cite{freeman1972},
 which explained how an apparent lack of structure in organizations ``{\ldots}too often disguised an informal,
 unacknowledged and unaccountable leadership that was all the more pernicious because its very existence was denied.''
 
@@ -111,38 +115,38 @@ Two decades later,
 we can see how unequal and unwelcoming the supposedly egalitarian ``bazaar'' of open source can be
 if authority lies with those willing to shout loudest and longest.
 Making a project's governance explicit is therefore essential to making that project inviting and welcoming to newcomers with diverse backgrounds.
-The most basic way to do this is to adopt something like the Contributor Covenant \cite{covenant},
+The most basic way to do this is to adopt something like the Contributor Covenant~\cite{covenant},
 which lays out groundrules for interpersonal interaction within the project.
 At the opposite end,
 large, well-established projects that incorporate as non-profits are required to promulgate bylaws,
-such as those for the Python Software Foundation \cite{psf-bylaws}.
+such as those for the Python Software Foundation~\cite{psf-bylaws}.
 
 What lies between these two extremes is less well documented,
-but the ``Social and Political Infrastructure'' chapter of \cite{fogel2005} is a good place to start.
+but the ``Social and Political Infrastructure'' chapter of~\cite{fogel2005} is a good place to start.
 It describes two models:
 
 \begin{itemize}
-
-\item
-  A \emph{benevolent dictator} (who might better be called a ``community-approved arbitrator'') has final say,
-  but their principal responsibility is to manage conversation to achieve consensus.
-
-\item
-  When consensus cannot be achieved,
-  organizations may hold a vote.
-  Organizations should decide who is and isn't eligible to vote well in advance of the emergence of issues requiring votes,
-  since tempers may already been running hot by the time this point is reached.
-  In the Carpentries,
-  for example,
-  anyone who satisfies any of the conditions below is eligible to run for a seat on the Executive Council
-  and to vote in those elections \cite{carpentries-bylaws}:
-  \begin{enumerate}
-    \item everyone who has completed instructor certification in the preceding year;
-    \item everyone who has completed certification in the last two years and taught at least one workshop;
-    \item everyone who has been certified for more than two years and has taught at least twice in that time; and
-    \item anyone who has made a significant contribution to lesson development, infrastructure, or other activities as determined by the Executive Council.
-  \end{enumerate}
-
+	
+	\item
+	A \emph{benevolent dictator} (who might better be called a ``community-approved arbitrator'') has final say,
+	but their principal responsibility is to manage conversation to achieve consensus.
+	
+	\item
+	When consensus cannot be achieved,
+	organizations may hold a vote.
+	Organizations should decide who is and isn't eligible to vote well in advance of the emergence of issues requiring votes,
+	since tempers may already be running hot by the time this point is reached.
+	In the Carpentries,
+	for example,
+	anyone who satisfies any of the conditions below is eligible to run for a seat on the Executive Council
+	and to vote in those elections~\cite{carpentries-bylaws}:
+	\begin{enumerate}
+		\item everyone who has completed instructor certification in the preceding year;
+		\item everyone who has completed certification in the last two years and taught at least one workshop;
+		\item everyone who has been certified for more than two years and has taught at least twice in that time; and
+		\item anyone who has made a significant contribution to lesson development, infrastructure, or other activities as determined by the Executive Council.
+	\end{enumerate}
+	
 \end{itemize}
 
 No organization wants to become mired in red tape of its own making,
@@ -156,20 +160,20 @@ each annotated to explain when and why the extra complexity should be added, wou
 
 The first step that newcomers take when they are willing to contribute is to choose a project.
 Behind this step,
-there are different forces acting that may lead them to decide to contribute to a specific project.
+different forces are acting that may lead them to decide to contribute to a specific project.
 The decision to contribute comes from a reason,
 a motivation pushing the developer towards open source projects.
 This can be related to reputation or external needs,
-but also to motives related to learning and giving back to the community.
+but also to the motives related to learning and giving back to the community.
 In the latter case,
-it is important to help newcomers to understand what would be a good fit for them in terms of their goals and skills.
+it is essential to help newcomers to understand what would be a good fit for them in terms of their goals and skills.
 
 To attract the developers,
 and enable them to evaluate whether the project is a good fit for them,
-the project needs to provide ways for newcomers to evaluate if their skills match with the skills required to contribute to the project.
-There are two different perspectives that should be taken in this case.
+the project needs to provide ways for newcomers to assess if their skills match with the skills required to contribute to the project.
+Two different perspectives should be taken in this case.
 Firstly,
-the project should explicitly state what are the different types of skills required.
+the project should explicitly state what the different types of skills required are.
 This information should be easily accessible and guide new members to the tasks they may handle.
 LibreOffice,
 for example,
@@ -182,14 +186,21 @@ there should be ways to enable developers to evaluate their skills.
 In addition to a self-evaluation,
 tools to support obtaining information from previous contributions may benefit newcomers and projects.
 Existing tools like \withurl{My GitHub Resume}{https://resume.github.io/},
-and academic approaches like Visual Resume \cite{sarma2016},
+and academic approaches like Visual Resume~\cite{sarma2016} (Figure~\ref{fig:visualResume}),
 may help to assess the developers' skills.
 Once projects have it clear what are the required skills to contribute and developers' skills are identified,
 it is possible to match them,
 enabling recommendations in terms of ``which project may be a good fit''
 and in terms of ``what tasks I may be able to work on''.
 
-\includegraphics[width=5.0cm]{contributions.png}
+
+ \begin{figure*}[hbt]
+	\centering
+   \includegraphics[width=4.5cm]{contributions.png}
+	\caption{Visual Resume screenshot showing the skills and contributions of a developer}
+	\label{fig:visualResume}
+\end{figure*}
+
 
 \rulemajor{Rule 4: Develop forms of Legitimate Peripheral Participation}
 
@@ -198,7 +209,7 @@ Legitimate peripheral participation (LPP) provides newcomers with opportunities 
 In order to be successful LPP must give newcomers an opportunity to engage in ways that add value to the community.
 However,
 in communities such as GitHub,
-core activites such as commiting code and submitting pull requests can be socially daunting for newcomers~\cite{steinmacher2015}.
+core activities such as committing code and submitting pull requests can be socially daunting for newcomers~\cite{steinmacher2015}.
 One form of encouraging LPP on this platform could be to encourage newcomers to add an issue to a repository when they notice a bug.
 Another form of LPP would be to join the dialogue on a recently submitted pull request.
 These provide newcomers interactive opportunities to learn the norms of the community. 
@@ -209,8 +220,8 @@ For example,
 the main form of interaction in the community on Stack Overflow is to ask a question and posting an answer.
 For some users, engaging in that type of interaction can present barriers including an intimidating community size and fear of negative feedback~\cite{ford2016}.
 Thus, it is important to provide additional forms of participation.
-On Stack Overflow this is demonstrated through the ability to edit questions and answer without the restriction of reputation points.
-Developing pathway to participation can decrease the presence of barriers.
+On Stack Overflow, this is demonstrated through the ability to edit questions and answer without the restriction of reputation points.
+Developing a pathway to participation can decrease the presence of barriers.
 In studying the evolution of how content is formed in these communities~\cite{baltes2018},
 newcomers can better understand the norms of a community and the best way to contribute~\cite{ford2018}.
 
@@ -232,7 +243,7 @@ it is important to keep information about a specific topic consolidated in a sin
 so that newcomers do not need to navigate multiple data sources to find what they need.
 The literature has shown that organizing the information make newcomers more confident and oriented~\cite{steinmacher2016}.
 This organization is something important for technical and process documentation but also for communication channels.
-Another suggestion is therefore to stick to a small number of communication channels
+Another suggestion is, therefore, to stick to a small number of communication channels
 and to clearly define the goals for each of them.
 
 At the same time,
@@ -251,16 +262,15 @@ FIXME
 \rulemajor{Rule 7: Provide an easy, complete, and up-to-date guide to contributing.}
 
 For any form of organized activity,
-it is likely more constructive and efficient to teach and reward desired behaviors
-than to change problematic behaviors down the line.
+it is likely more constructive and efficient to teach and reward desired behaviors than to change problematic behaviors down the line.
 Project decision-makers can prompt desired practices in open source software development
 by providing newcomers with ``how to contribute'' guidelines in easy-to-find, readily-available places.
-Many projects follow GitHub's recommendation for placing such information in a CONTRIBUTING.md file \cite{github-rec}.
+Many projects follow GitHub's recommendation for placing such information in a CONTRIBUTING.md file~\cite{github-rec}.
 Other projects,
 such as the Apache Open Office Suite and rOpenSci,
-provide text-based newcomer manuals and learning modules accessed through a web interface \cite{apache-guidelines,ropensci-guidelines}.
-Still others take a more interactive approach,
-such as the GNOME project's Newcomers Guide \cite{gnome-newcomers},
+provide text-based newcomer manuals and learning modules accessed through a web interface~\cite{apache-guidelines,ropensci-guidelines}.
+Still, others take a more interactive approach,
+such as the GNOME project's Newcomers Guide~\cite{gnome-newcomers},
 which walks potential contributors through the contribution pipeline:
 choosing a project,
 acquiring and installing the necessary computing tools,
@@ -272,8 +282,8 @@ and following up on feedback.
 no matter the form of presentation,
 serve several additional purposes alongside describing expected contribution behaviors.
 Contribution guidelines offer a centralized, well-organized description of resources
-that a newcomer can consult while learning to navigate the project's technical and social environments \cite{zanatta2017}.
-Indeed, the social environment is a key constraint on newcomer behaviors \cite{steinmacher2015};
+that a newcomer can consult while learning to navigate the project's technical and social environments~\cite{zanatta2017}.
+Indeed, the social environment is a key constraint on newcomer behaviors~\cite{steinmacher2015};
 explicitly-stated definitions of contribution expectations can ease newcomers' hesitancies
 about whether or not their work is sufficient and suitable for the project.
 Relatedly,
@@ -306,7 +316,7 @@ FIXME
 \rulemajor{Rule 10: Follow up on success.}
 
 Once a new contributor has been able to carry their first contribution over the line, 
-you're likely to have have a sense of their strenghts and weakensses,
+you're likely to have a sense of their strengths and weaknesses,
 and this is a good time to invite them to continue their involvement in your project.
 
 The first and most important thing is to thank them for their contribution.
@@ -315,8 +325,8 @@ Gratitude and recognition are the most powerful tools available for community bu
 After that,
 consider what you've learned of this contributor to help them find
 the next issue they might want to work on.
-If we have aspirations for our open source projects as a welcome and empopwering community,
-it's important that this be an invitation,
+If we have aspirations for our open source projects as a welcome and empowering community,
+it is important that this be an invitation,
 not a suggestion or demand. 
 
 \section*{Conclusion}
@@ -330,7 +340,7 @@ if the enforcement process is seen to be toothless or selective.
 
 Whatever our intentions,
 our commitment to our goals and values is seen through our actions.
-If new participants to our community are disciplined for the same behavior
+If new participants in our community are disciplined for the same behavior
 for which longtime participants get a pass,
 then you should expect any community-building efforts to fail.
 
