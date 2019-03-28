@@ -165,7 +165,7 @@ limits on access to project communication avenues (e.g., Slack channels or maili
 or in severe cases,
 suspension or expulsion from contributing to the project.
 
-\rulemajor{Rule 2: Make governance explicit.}
+\rulemajor{Rule 2: Make governance and licensing explicit.}
 
 Raymond's ``The Cathedral and the Bazaar''~\cite{raymond2001}
 described an egalitarian world in which everyone could contribute equally to open projects.
@@ -197,8 +197,6 @@ describes two models:
 	
 \item
   Elected representation and/or community votes on key issues.
-  Organizations should decide who is and isn't eligible to vote well in advance of the emergence of issues requiring votes,
-  since tempers may already be running hot by the time this point is reached.
   In the Carpentries,
   for example,
   anyone who satisfies any of the conditions below is considered a voting member of the organization~\cite{carpentries-bylaws}:
@@ -213,8 +211,21 @@ describes two models:
     anyone who has made a significant contribution to lesson development, infrastructure, or other activities
     as determined by the Executive Council.
   \end{enumerate}
+  Organizations should decide who is and isn't eligible to vote well in advance of the emergence of issues requiring votes,
+  since tempers may already be running hot by the time this point is reached.
 
 \end{itemize}
+
+As well as making governance explicit,
+it is essential that open projects be clear about licensing.
+Who can use the data collected by the software for what purposes,
+and what attribution do they have to give?
+How must they acknowledge the project and/or its contributors?
+Who holds the copyright on contributed material?
+Most projects now place this information in files called \texttt{LICENSE.md} and \texttt{CITATION.md}
+to make them easy to find.
+Wherever they are put,
+the most important thing is to make it clear before people begin contributing.
 
 \rulemajor{Rule 3: Be welcoming.}
 
@@ -305,7 +316,7 @@ Developing a pathway to participation can decrease the presence of barriers.
 In studying the evolution of how content is formed in these communities~\cite{baltes2018},
 newcomers can better understand the norms of a community and the best way to contribute~\cite{ford2018}.
 
-\rulemajor{Rule 6: Make knowledge findable.}
+\rulemajor{Rule 6: Make knowledge findable and keep it up to date.}
 
 When starting to contribute to a project,
 newcomers need to learn their way around it.
@@ -340,7 +351,7 @@ communities may request help from the newcomers as a way to foster their contrib
 One special case of the previous rule is so important that it counts as a rule on its own.
 A project can guide newcomers toward desired practices
 by providing them with ``how to contribute'' guidelines in easy-to-find, readily-available places.
-Many projects follow GitHub's recommendation for placing such information in a CONTRIBUTING.md file~\cite{github-rec}.
+Many projects follow GitHub's recommendation for placing such information in a \texttt{CONTRIBUTING.md} file~\cite{github-rec}.
 Other projects,
 such as the Apache Open Office Suite and rOpenSci,
 provide newcomer manuals and learning modules accessed through a web interface~\cite{apache-guidelines,ropensci-guidelines}.
@@ -365,7 +376,13 @@ that a newcomer can consult while learning to navigate the project's technical a
 Guidelines also acclimate newcomers to the norms of work and communication,
 particularly when items such as necessary computing tools and codes of conduct are foregrounded.
 
-Project decision-makers should keep in mind, however,
+Finally,
+such guidelines should be clear about how contributions will be acknowledged
+and how they can be used.
+A pointer to the license and citation documents (Rule 2) is a start,
+but a summary in plain language will be more helpful for newcomers.
+
+Project decision-makers should keep in mind
 that their perceptions of what constitutes clear, easy-to-find contribution guidelines
 may not align with the perceptions of the newcomers themselves.
 Continual reevaluation of the guidelines based on community member feedback is essential
@@ -445,19 +462,23 @@ that they wouldn't do for a hundred dollars.
 This joke acknowledges that gratitude and recognition are the most powerful tools available for community builders and maintainers.
 Our last rule is therefore as important as our first:
 acknowledge newcomers' contributions and thank them for their work.
-Every hour that someone has given your project is likely an hour stolen from their personal life
+Every hour that someone has given your project may be an hour taken away from their personal life
 or their official employment;
 recognize that fact
 and make it clear that while more hours would be welcome,
 you do not expect them to make unsustainable sacrifices.
 
-Doing this is also a good time to figure out where and how the newcomer might help in the longer term.
+This is also a good time to figure out where and how the newcomer might help in the longer term.
 Once they have carried their first contribution over the line,
 you and they are likely to have a better sense of what they have to offer
 and how the project can help them.
 Helping them find the next problem they might want to work on
 or pointing them at the next thing they might enjoy reading
 is both helpful and supportive.
+In particular,
+encouraging them to become a mentor for the next wave of newcomers
+is both a good way to recognize what they have learned,
+and an effective way to pass it on.
 
 \bibliography{rules}
 
