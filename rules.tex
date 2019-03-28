@@ -13,19 +13,19 @@
 }
 \newline
 \\
-{Mara Averick}\textsuperscript{1{\ddag}},
-{Denae Ford}\textsuperscript{2{\ddag}},
-{Mike Hoye}\textsuperscript{3{\ddag}},
-{Dan Sholler}\textsuperscript{4{\ddag}},
-{Igor Steinmacher}\textsuperscript{5{\ddag}},
-{Greg Wilson}\textsuperscript{1{\ddag}*}
+{Dan Sholler}\textsuperscript{1{\ddag}},
+{Igor Steinmacher}\textsuperscript{2{\ddag}},
+{Denae Ford}\textsuperscript{3{\ddag}},
+{Mara Averick}\textsuperscript{4{\ddag}},
+{Mike Hoye}\textsuperscript{5{\ddag}},
+{Greg Wilson}\textsuperscript{4{\ddag}*}
 \\
 \bigskip
-\textbf{1} RStudio, Inc. / \{mara.averick, greg.wilson\}@rstudio.com \\
-\textbf{2} North Carolina State University / dford3@ncsu.edu \\
-\textbf{3} Mozilla Corporation / mhoye@mozilla.com \\
-\textbf{4} Berkeley Institute for Data Science / sholler.daniel@gmail.com \\
-\textbf{5} Northern Arizona University/ igor.steinmacher@nau.edu \\\bigskip
+\textbf{1} Berkeley Institute for Data Science / sholler.daniel@gmail.com \\
+\textbf{2} Northern Arizona University/ igor.steinmacher@nau.edu \\\bigskip
+\textbf{3} North Carolina State University / dford3@ncsu.edu \\
+\textbf{4} RStudio, Inc. / \{mara.averick, greg.wilson\}@rstudio.com \\
+\textbf{5} Mozilla Corporation / mhoye@mozilla.com \\
 * Corresponding author. \\
 \bigskip
 {\ddag} These authors contributed equally to this work.
@@ -118,14 +118,20 @@ and observers of them.
 \rulemajor{Rule 1: have and enforce a code of conduct.}
 
 The first and most important rule is
-to explicitly codify guidelines for all members of the community to follow
-to foster an environment that newcomers find healthy and welcoming.
-An increasingly popular strategy for doing so is to adopt and publish a Code of Conduct.
+to explicitly codify guidelines for members of the community to follow.
+This helps ensure that everyone---not just newcomers---will find the environment healthy and welcoming.
+Doing this also sends a clear signal that the community actually has standards:
+many potential contributors will be painfully familiar with communities that don't,
+and are more likely to give yours a try if they believe
+it's more than a troll-infested chat room.
+Explicit guidelines also make the project more socially accessible to people from differing cultural backgrounds,
+as it helps them understand what expectations are and how they may differ from what they're used to.
+
+An increasingly popular strategy for establishing guidelines is to adopt a Code of Conduct.
 Many projects such as rOpenSci~\cite{ropensci-coc},
 NumPy~\cite{numpy-coc},
 and Project Jupyter~\cite{jupyter-coc}
-have adopted Codes of Conduct
-based on the Contributor Covenant~\cite{covenant}
+have done this using the Contributor Covenant~\cite{covenant}
 or other frameworks such as SciPy's Code of Conduct~\cite{scipy-coc}.
 
 However, several questions around reporting violations and enforcing rules remain open.
@@ -162,29 +168,26 @@ suspension or expulsion from contributing to the project.
 \rulemajor{Rule 2: Make governance explicit.}
 
 Raymond's ``The Cathedral and the Bazaar''~\cite{raymond2001}
-was one of the most influential documents in the history of open source.
-It described an egalitarian world in which everyone could contribute equally to the greater good,
-but as Bezroukov pointed out~\cite{bezroukov1999},
-that description ignored the realities of how power arises,
-becomes concentrated in a few hands,
-and is then used to perpetuate itself.
-Bezroukov's criticism drew on Freeman's influential essay ``The Tyranny of Structurelessness''~\cite{freeman1972},
-which explained how an apparent lack of structure in organizations ``{\ldots}too often disguised an informal,
-unacknowledged and unaccountable leadership that was all the more pernicious because its very existence was denied.''
-
+described an egalitarian world in which everyone could contribute equally to open projects.
 Two decades later,
 we can see how unequal and unwelcoming the supposedly egalitarian ``bazaar'' of open source can be
 if authority lies with those willing to shout loudest and longest.
-Making a project's governance explicit is therefore essential to making that project inviting and welcoming to newcomers with diverse backgrounds.
-The most basic way to do this is to adopt something like the Contributor Covenant~\cite{covenant},
-which lays out ground rules for interpersonal interaction within the project.
-At the opposite end,
-large, well-established projects that incorporate as non-profits are required to promulgate bylaws,
-such as those for the Python Software Foundation~\cite{psf-bylaws}.
+As Bezroukov pointed out~\cite{bezroukov1999},
+Raymond ignored the realities of how power arises,
+becomes concentrated in a few hands,
+and is then used to perpetuate itself.
 
-What lies between these two extremes is less well documented,
-but the ``Social and Political Infrastructure'' chapter of~\cite{fogel2005} is a good place to start.
-It describes two models:
+Bezroukov's criticism drew on Freeman's influential essay ``The Tyranny of Structurelessness''~\cite{freeman1972},
+which explained how an apparent lack of structure in organizations ``{\ldots}too often disguised an informal,
+unacknowledged and unaccountable leadership that was all the more pernicious because its very existence was denied.''
+The solution is to make a project's governance explicit
+so that people know who makes which decisions.
+
+Large, well-established projects that incorporate as non-profits are required to promulgate bylaws,
+such as those for the Python Software Foundation~\cite{psf-bylaws}.
+What smaller projects should do is less well documented,
+but the ``Social and Political Infrastructure'' chapter of~\cite{fogel2005}
+describes two models:
 
 \begin{itemize}
 	
@@ -193,14 +196,12 @@ It describes two models:
   but their principal responsibility is to manage conversation to achieve consensus.
 	
 \item
-  When consensus cannot be achieved,
-  organizations may hold a vote.
+  Elected representation and/or community votes on key issues.
   Organizations should decide who is and isn't eligible to vote well in advance of the emergence of issues requiring votes,
   since tempers may already be running hot by the time this point is reached.
   In the Carpentries,
   for example,
-  anyone who satisfies any of the conditions below is eligible to run for a seat on the Executive Council
-  and to vote in those elections~\cite{carpentries-bylaws}:
+  anyone who satisfies any of the conditions below is considered a voting member of the organization~\cite{carpentries-bylaws}:
   \begin{enumerate}
   \item
     everyone who has completed instructor certification in the preceding year;
@@ -215,110 +216,85 @@ It describes two models:
 
 \end{itemize}
 
-No organization wants to become mired in red tape of its own making,
-but equally no one has ever said,
-``I wish we had waited longer before making our rules explicit.''
-Should any reader wish to make a significant non-coding contribution to open source,
-a series of three or four successively more elaborate models for governance,
-each annotated to explain when and why the extra complexity should be added, would be extremely valuable.
+\rulemajor{Rule 3: Be welcoming.}
 
-\rulemajor{Rule 3: Make it clear that newcomers are welcome.}
-
-Perhaps the most obvious of the methods for making newcomers feel welcome is to greet them with kindness and politeness.
-A newcomer's first impression of a project will influence their perceptions of the project's overall environment
-and in turn their likelihood to sustain engagement with the project.
 As Fogel said~\cite{fogel2005},
 ``If a project doesn't make a good first impression, newcomers may wait a long time before giving it a second chance.''
-Other authors have empirically evaluated and confirmed the importance of kind and polite social environments
+Other authors have empirically confirmed the importance of kind and polite social environments
 in open source projects \cite{singh2012,steinmacher2013,steinmacher2018}.
 Therefore,
-extra steps
-(beyond following the basic guidelines set forth in the Code of Conduct)
-should be taken to foster a positive feeling.
-Several approaches can be taken, including:
+projects should not just say that they welcome new members:
+they should make a proactive effort to foster positive feelings in them:
 
 \begin{itemize}
 
 \item
-  Posting a welcome message on the project's social media pages, Slack channels, forums, or email lists.
+  Post a welcome message on the project's social media pages, Slack channels, forums, or email lists.
   Projects might consider maintaining a dedicated ``Welcome'' channel or list,
   where a project lead or community manager writes a short post asking newcomers to introduce themselves.
 
 \item
-  Offering assistance in finding ways to make an initial contribution.
+  Offer assistance in finding ways to make an initial contribution.
 
 \item
-  Directing the newcomer to project members who have a similar background or skill set
+  Direct the newcomer to project members who have a similar background or skill set
   so as to demonstrate fit to the newcomer.
 
 \item
-  Pointing the newcomer to essential project resources (e.g., the contribution guidelines).
+  Point the newcomer to essential project resources (e.g., the contribution guidelines).
 
 \end{itemize}
 
-In applying all of these approaches,
-projects should dedicate one or two members to serve as a point-of-contact for each newcomer.
-Designating a point-of-contact may help to lower the newcomer's hesitancy to ask questions,
+Projects can further designate one or two members to serve as a point-of-contact for each newcomer.
+Doing this may reduce the newcomer's hesitancy to ask questions,
 particularly when they are told from the outset that there are no dumb questions in the community.
 
 \rulemajor{Rule 4: Help potential contributors evaluate if the project is a good fit.}
 
-The first step that newcomers take when they are willing to contribute is to choose a project.
-Behind this step,
-different forces are acting that may lead them to decide to contribute to a specific project.
-The decision to contribute comes from a reason,
-a motivation pushing the developer towards open source projects.
-This can be related to reputation or external needs,
-but also to the motives related to learning and giving back to the community.
-In the latter case,
-it is essential to help newcomers to understand what would be a good fit for them in terms of their goals and skills.
+One special case of the previous rule is so important that it counts as a rule on its own.
+People could contribute to many different projects;
+the first and most important step in being welcoming is to help them determine whether
+your project is a good fit for their interests and abilities.
+Their decision to contribute can be related to reputation or external needs,
+but also to a desire to learn or give back to the community.
+In all of these cases,
+the more you help newcomers understand if this is the right project for them,
+the more quickly they will either start contributing or look elsewhere.
 
-To attract the developers,
-and enable them to evaluate whether the project is a good fit for them,
-the project needs to provide ways for newcomers to assess if their skills match with the skills required to contribute to the project.
-Two different perspectives should be taken in this case.
-Firstly,
+To do this,
 the project should explicitly state what the different types of skills required are.
 This information should be easily accessible and guide new members to the tasks they may handle.
 LibreOffice,
 for example,
 provides a way for developers to filter available tasks by required skills and difficulty~\cite{libreoffice-filtered}.
 
-Secondly,
-from the developers perspective,
-there should be ways to enable developers to evaluate their skills.
-In addition to a self-evaluation,
-tools to support obtaining information from previous contributions may benefit newcomers and projects.
-Existing tools like My GitHub Resume~\cite{my-github-resume}
-and academic approaches like Visual Resume~\cite{sarma2016} (Figure~\ref{fig:visualResume})
-may help to assess the developers' skills.
-Once projects have it clear what are the required skills to contribute and developers' skills are identified,
-it is possible to match them,
-enabling recommendations in terms of ``which project may be a good fit''
-and in terms of ``what tasks I may be able to work on''.
-
-\begin{figure*}[hbt]
-  \centering
-  \includegraphics[width=4.5cm]{contributions.png}
-  \caption{Visual Resume screenshot showing the skills and contributions of a developer}
-  \label{fig:visualResume}
-\end{figure*}
+The project should also help developers evaluate their skills,
+since ``basic Python skills'' means very different things to different people.
+Tools like My GitHub Resume~\cite{my-github-resume} and Visual Resume~\cite{sarma2016}
+that aggregate information from previous contributions can help with this assessment,
+while the OpenHatch project~\cite{openhatch} aggregated entry-level issues from a variety of open source projects
+and classified them according to language and other required skills
+to provide a one-stop portal for finding appropriate projects.
 
 \rulemajor{Rule 5: Develop forms of legitimate peripheral participation}
 
-Legitimate peripheral participation (LPP) provides newcomers with opportunities to ease into a project
-and learn the norms of the community through low-risk tasks,
-(i.e., tasks that will not interrupt the community's utility)~\cite{lave1991,wenger1999}.
-In order to be successful LPP must give newcomers an opportunity to engage in ways that add value to the community.
-However,
-in communities such as GitHub,
+A core concept in the theory of communities of pracice is that of
+legitimate peripheral participation (LPP)~\cite{lave1991,wenger1999}.
+Newcomers become members of a community by participating in simple, low-risk tasks
+that further the goals of the community.
+Through these peripheral activities,
+newcomers become acquainted with the community's tasks, vocabulary, and governance
+so that they can ease into the project.
+
+In communities such as GitHub,
 core activities such as committing code and submitting pull requests can be socially daunting for newcomers~\cite{steinmacher2015}.
-One form of encouraging LPP on this platform could be to encourage newcomers to add an issue to a repository when they notice a bug.
-Another form of LPP would be to join the dialogue on a recently submitted pull request.
-These provide newcomers interactive opportunities to learn the norms of the community. 
+One way to encourage LPP in this case is to encourage newcomers to add an issue to a repository when they notice a bug
+or to join the dialog on a recently submitted pull request.
+Another way is to have newcomers help with documentation,
+particularly with translation and localization.
 
 Building multiple ways of participating in a community demonstrates the variety of approaches newcomers can take to join the community.
-This further demonstrates that there's not just one way to make technical contributions.
+This further demonstrates that there is not just one way to make technical contributions.
 For example,
 the main form of interaction in the community on Stack Overflow is to ask a question and posting an answer.
 For some users,
@@ -359,7 +335,46 @@ Making newcomers aware of the absence or the status of a document can save their
 By recognizing the obsolescence of the information,
 communities may request help from the newcomers as a way to foster their contribution.
 
-\rulemajor{Rule 7: Use opportunities for in-person interaction, but with caution.}
+\rulemajor{Rule 7: Provide an easy, complete, and up-to-date guide to contributing.}
+
+One special case of the previous rule is so important that it counts as a rule on its own.
+A project can guide newcomers toward desired practices
+by providing them with ``how to contribute'' guidelines in easy-to-find, readily-available places.
+Many projects follow GitHub's recommendation for placing such information in a CONTRIBUTING.md file~\cite{github-rec}.
+Other projects,
+such as the Apache Open Office Suite and rOpenSci,
+provide newcomer manuals and learning modules accessed through a web interface~\cite{apache-guidelines,ropensci-guidelines}.
+Still others take a more interactive approach;
+for example,
+the GNOME project's Newcomers Guide~\cite{gnome-newcomers}, walks potential contributors through the contribution pipeline:
+choosing a project,
+acquiring and installing the necessary computing tools,
+finding problems or choosing issues to work on,
+submitting changes,
+and following up on feedback.
+
+No matter how they are presented,
+such guidelines do more than just describe how to contribute
+and help newcomers feel they are on equal footing with veteran project members.
+First,
+their mere existence can ease newcomers' hesitatation
+about whether or not their work is sufficient and suitable for the project.
+Second,
+they provide a centralized, well-organized description of resources
+that a newcomer can consult while learning to navigate the project's technical and social environments~\cite{zanatta2017}.
+Guidelines also acclimate newcomers to the norms of work and communication,
+particularly when items such as necessary computing tools and codes of conduct are foregrounded.
+
+Project decision-makers should keep in mind, however,
+that their perceptions of what constitutes clear, easy-to-find contribution guidelines
+may not align with the perceptions of the newcomers themselves.
+Continual reevaluation of the guidelines based on community member feedback is essential
+to ensuring that contribution guidelines are achieving desired effects
+and do not fall out of date (e.g., as technical and social elements of the community change).
+Contributing to the contribution guidelines is therefore
+an excellent opportunity for legitimate peripheral participation.
+
+\rulemajor{Rule 8: Use opportunities for in-person interaction, but with care.}
 
 Open source software projects often rely heavily on remote workers communicating via text, audio, and video.
 Research on face-to-face and audio/video-mediated communication is mixed
@@ -400,58 +415,13 @@ important contextual information may be lost~\cite{cherubini2007}.
 Decisions and changes may seem to come out of nowhere when evaluated by a non-attendee,
 so project leads should develop universally-accessible ways to communicate and explain the results of in-person activities.
 
-\rulemajor{Rule 8: Provide an easy, complete, and up-to-date guide to contributing.}
-
-For any form of organized activity,
-it is likely more constructive and efficient to teach and reward desired behaviors than to change problematic behaviors down the line.
-Project decision-makers can prompt desired practices in open source software development
-by providing newcomers with ``how to contribute'' guidelines in easy-to-find, readily-available places.
-Many projects follow GitHub's recommendation for placing such information in a CONTRIBUTING.md file~\cite{github-rec}.
-Other projects,
-such as the Apache Open Office Suite and rOpenSci,
-provide text-based newcomer manuals and learning modules accessed through a web interface~\cite{apache-guidelines,ropensci-guidelines}.
-Still, others take a more interactive approach,
-such as the GNOME project's Newcomers Guide~\cite{gnome-newcomers},
-which walks potential contributors through the contribution pipeline:
-choosing a project,
-acquiring and installing the necessary computing tools,
-finding problems or choosing issues to work on,
-submitting changes,
-and following up on feedback.
-
-``How to contribute'' guidelines,
-no matter the form of presentation,
-serve several additional purposes alongside describing expected contribution behaviors.
-Contribution guidelines offer a centralized, well-organized description of resources
-that a newcomer can consult while learning to navigate the project's technical and social environments~\cite{zanatta2017}.
-Indeed, the social environment is a key constraint on newcomer behaviors~\cite{steinmacher2015};
-explicitly-stated definitions of contribution expectations can ease newcomers' hesitancies
-about whether or not their work is sufficient and suitable for the project.
-Relatedly,
-guidelines also acclimate newcomers to the norms of work and communication,
-particularly when items such as necessary computing tools and codes of conduct are foregrounded.
-In sum,
-when combined with a welcoming, inclusive environment,
-clear expectations about legitimate participation,
-and shared software development goals,
-contribution guidelines can help newcomers feel they are on equal footing with veteran project members.
-
-Project decision-makers should keep in mind, however, 
-that their perceptions of what constitutes clear, easy-to-find contribution guidelines
-may not align with the perceptions of the newcomers themselves.
-Continual reevaluation of the guidelines based on community member feedback is essential
-to ensuring that contribution guidelines are achieving desired effects
-and do not fall out of date (e.g., as technical and social elements of the community change).
-In this sense,
-contribution guidelines should be treated as living, evolving documents rather than immutable rules.
-
 \rulemajor{Rule 9: make it easy for newcomers to start working.}
 
 There is a lot to be gained from automating as much of your setup process you can
-and thoroughly documenting whatever you can't. 
+and thoroughly documenting whatever you can't.
 This critical special case of the previous rule is so important that it deserves to be a rule on its own.
 The experience of getting set up to work on a project---the moment they go from ``I want to help''
-to ``I'm able to help'' to ``I'm helping''---is often a contributor's first impressions of 
+to ``I'm able to help'' to ``I'm helping''---is often a contributor's first impressions of
 the experience of participating in that community.
 This makes the developer setup process a critical moment in your relationship with every new contributor,
 which in turn means that any complexity or confusion at this point is a significant barrier to participation.
@@ -465,22 +435,29 @@ Wheelchair ramps and the buttons that open heavy doors are not just used by thos
 they are just as helpful to people with strollers or one too many bags of groceries.
 None of us are ever more than a sprained ankle away from desperately wanting that wheelchair ramp to be there.
 In that same vein, a drive failure will someday force you to download a gigabyte of data
-and reinstall some software, inevitably at the least convenient moment imaginable. 
+and reinstall some software, inevitably at the least convenient moment imaginable.
 
 \rulemajor{Rule 10: Follow up on success.}
 
-Once a new contributor has been able to carry their first contribution over the line, 
-you're likely to have a sense of their strengths and weaknesses.
-This is then a good time to invite them to continue their involvement in your project.
+People in open source sometimes joke that
+a programmer is someone who will do something for a laptop sticker
+that they wouldn't do for a hundred dollars.
+This joke acknowledges that gratitude and recognition are the most powerful tools available for community builders and maintainers.
+Our last rule is therefore as important as our first:
+acknowledge newcomers' contributions and thank them for their work.
+Every hour that someone has given your project is likely an hour stolen from their personal life
+or their official employment;
+recognize that fact
+and make it clear that while more hours would be welcome,
+you do not expect them to make unsustainable sacrifices.
 
-The first and most important thing is to thank them for their contribution.
-Gratitude and recognition are the most powerful tools available for community builders and maintainers. 
-After that,
-consider what you've learned of this contributor to help them find
-the next issue they might want to work on.
-If we have aspirations for our open source projects as a welcome and empowering community,
-it is important that this be an invitation,
-not a suggestion or demand. 
+Doing this is also a good time to figure out where and how the newcomer might help in the longer term.
+Once they have carried their first contribution over the line,
+you and they are likely to have a better sense of what they have to offer
+and how the project can help them.
+Helping them find the next problem they might want to work on
+or pointing them at the next thing they might enjoy reading
+is both helpful and supportive.
 
 \bibliography{rules}
 
