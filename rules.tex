@@ -137,12 +137,12 @@ Explicit guidelines also make the project more socially accessible to people fro
 as it helps them understand what expectations are and how they may differ from what they're used to.
 
 An increasingly popular strategy for establishing guidelines is to adopt a Code of Conduct.
-Many projects such as rOpenSci~\cite{ropensci-coc},
+Empirical research on codes of conduct is still in its infancy~\cite{tourani2017},
+but many projects such as rOpenSci~\cite{ropensci-coc},
 NumPy~\cite{numpy-coc},
 and Project Jupyter~\cite{jupyter-coc}
-have done this using the Contributor Covenant~\cite{covenant}
-or other frameworks such as SciPy's Code of Conduct~\cite{scipy-coc}.
-
+have adopted the Contributor Covenant~\cite{covenant}
+or used other frameworks such as SciPy's Code of Conduct~\cite{scipy-coc}.
 However, several questions around reporting violations and enforcing rules remain open.
 What is the appropriate mechanism for reporting violations?
 Who should receive reports?
@@ -243,10 +243,10 @@ the most important thing is to make it clear before people begin contributing.
 As Fogel said~\cite{fogel2005},
 ``If a project doesn't make a good first impression, newcomers may wait a long time before giving it a second chance.''
 Other authors have empirically confirmed the importance of kind and polite social environments
-in open source projects \cite{singh2012,steinmacher2013,steinmacher2018}.
+in open source projects \cite{singh2012,steinmacher2013,steinmacher2018a}.
 Therefore,
 projects should not just say that they welcome new members:
-they should make a proactive effort to foster positive feelings in them:
+they should make a proactive effort to foster positive feelings in them.
 
 \begin{itemize}
 
@@ -305,7 +305,7 @@ to provide a one-stop portal for finding appropriate projects.
 
 \rulemajor{Rule 5: Develop forms of legitimate peripheral participation}
 
-A core concept in the theory of communities of pracice is that of
+A core concept in the theory of communities of practice is that of
 legitimate peripheral participation (LPP)~\cite{lave1991,wenger1999}.
 Newcomers become members of a community by participating in simple, low-risk tasks
 that further the goals of the community.
@@ -384,7 +384,7 @@ No matter how they are presented,
 such guidelines do more than just describe how to contribute
 and help newcomers feel they are on equal footing with veteran project members.
 First,
-their mere existence can ease newcomers' hesitatation
+their mere existence can ease newcomers' hesitation
 about whether or not their work is sufficient and suitable for the project.
 Second,
 they provide a centralized, well-organized description of resources
@@ -448,18 +448,23 @@ important contextual information may be lost~\cite{cherubini2007}.
 Decisions and changes may seem to come out of nowhere when evaluated by a non-attendee,
 so project leads should develop universally-accessible ways to communicate and explain the results of in-person activities.
 
-\rulemajor{Rule 9: make it easy for newcomers to start working.}
+\rulemajor{Rule 9: make it easy for newcomers to set up.}
 
-There is a lot to be gained from automating as much of your setup process you can
-and thoroughly documenting whatever you can't.
-This critical special case of the previous rule is so important that it deserves to be a rule on its own.
 The experience of getting set up to work on a project---the moment they go from ``I want to help''
 to ``I'm able to help'' to ``I'm helping''---is often a contributor's first impressions of
 the experience of participating in that community.
 This makes the developer setup process a critical moment in your relationship with every new contributor,
-which in turn means that any complexity or confusion at this point is a significant barrier to participation.
-In short, by treating the process of getting involved with the same care and attention you give
-to the product itself, you're making it clear that you value those contributors' time and effort.
+which in turn means that any complexity or confusion at this point is a significant barrier to participation~\cite{steinmacher2014}.
+By treating the process of getting involved with the same care and attention you give to the product itself,
+you're making it clear that you value those contributors' time and effort,
+and forestalling reactions like this~\cite{steinmacher2018b}:
+
+\begin{quote}
+  I am still trying to build, because many errors occurred{\ldots}
+  I was expecting to move forward,
+  because so far I did not have time to look at the source code{\ldots}
+  It is frustrating.
+\end{quote}
 
 This work does not just benefit newcomers:
 it also helps retention of existing intermittent contributors and the same work that makes your project more
@@ -469,8 +474,8 @@ they are just as helpful to people with strollers or one too many bags of grocer
 None of us are ever more than a sprained ankle away from desperately wanting that wheelchair ramp to be there.
 In that same vein, a drive failure will someday force you to download a gigabyte of data
 and reinstall some software, inevitably at the least convenient moment imaginable.
-
-FIXME: need citations.
+There is therefore a lot to be gained from automating as much of your setup process you can
+and thoroughly documenting whatever you can't.
 
 \rulemajor{Rule 10: Follow up on success.}
 
@@ -494,11 +499,32 @@ Helping them find the next problem they might want to work on
 or pointing them at the next thing they might enjoy reading
 is both helpful and supportive.
 In particular,
-encouraging them to become a mentor for the next wave of newcomers
+encouraging them to help the next wave of newcomers
 is both a good way to recognize what they have learned,
 and an effective way to pass it on.
 
-FIXME: need citations.
+Mentoring programs are a popular way to do this.
+However,
+their effectiveness appears mixed.
+\cite{fagerholm2014} found that,
+``{\ldots}developers receiving deliberate onboarding support through mentoring
+were more active at an earlier stage than developers entering projects through conventional means.''
+In contrast,
+\cite{labuschagne2015} found that,
+``{\ldots}developers who join an organization through these programs
+are half as likely to transition into long-term community members
+than developers who do not use these programs{\ldots}
+although developers who do succeed through these programs find them valuable.''
+
+One explanation for this disparity is that people become members of open projects for different reasons,
+and hence respond to things like mentoring programs in different ways.
+For example,
+Barcomb et al.\ identified four types of episodic or intermittent contributors to open source projects~\cite{barcomb2019},
+while M\"{a}enp\"{a}\"{a} et al.\ looked at how to reconcile
+the competing yet complementary needs of stakeholders in hybrid open/commercial projects.
+More research is needed,
+but as openness becomes the norm in research,
+doing it well becomes a core skill for every researcher.
 
 \bibliography{rules}
 
