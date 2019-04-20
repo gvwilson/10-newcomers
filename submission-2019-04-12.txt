@@ -1,0 +1,11 @@
+April 12, 2019
+
+To whom it may concern,
+
+Please find attached our paper "Ten Simple Rules for Helping Newcomers Become Contributors to Open Source Projects", which we wish to submit for publication.  We hope you enjoy it, and look forward to hearing from you.
+
+Sincerely,
+
+Dan Sholler, Igor Steinmacher, Denae Ford, Mara Averick, Mike Hoye, and Greg Wilson
+
+gvwilson@third-bit.com
