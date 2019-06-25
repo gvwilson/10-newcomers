@@ -1,6 +1,6 @@
 LATEX=pdflatex
 BIBTEX=bibtex
-STEM=revised
+STEM=10-newcomers
 
 all : commands
 
