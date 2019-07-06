@@ -1,0 +1,145 @@
+Overall, this is an interesting paper and provides useful guidance for
+open science, open source communities of effort. It is interesting that
+these rules are based on fairly young (few months - few years) and few
+dozen participants. Perhaps the focus on newcomers is because that is
+where the primary focus of these communities is right now. I would
+encourage authors to also consider what happens when these communities
+mature and what happens when they scale to 100 or 1000 participants? As
+a community manager it would be even more useful to me if there was a
+suggest 'best practice' for each rule or set of resources to explore to
+make these rules more immediately implementable. It would also be
+interesting if after this paper is published if communities that agree
+'endorse' these rules and implement or share how they are fulfilling
+each rule -- a community seal of approval?
+
+Below are comments on each rule followed by suggestions for merging
+rules and reordering rules:
+
+Rule 1: Code of conduct is important, but the culture that it defines is
+critical. This is the current trendy item to mention, but a code of
+conduct is just one tool. Key questions here are: How do communities
+create a culture of collegial, open, sharing? It isn't with just a code
+of conduct at the start. It is also speaking up, if you see something
+say something. It is modeling appropriate behavior. People participate
+in open science or open source because there is something of personal or
+professional value or gain for them. Would also suggest tightening up
+the issues around reporting. Many communities do this badly and these
+points are good, but a little fragmented. May also suggest terming this
+community guidelines or rules of the road.
+
+Rule 2 -- Make governance explicit is a good point, but muddied with
+citation and licensing. This reviewer recommends a separate rule on
+community acknowledgement (see notes on rule 10).
+
+Would shy away from benevolent dictators as part of any governance
+because the risk is that project then lives and dies with one person. If
+this is steering communities towards best practices, identification of
+how someone becomes a member of the project to have a voice, what
+decisions are made collectively. Ideally, open source projects want the
+entire community to feel shared ownership.
+
+I might also suggest that simple and sloppy like the internet -- have
+governance that can evolve as the organization grows and matures and
+don't make it too complicated or heavy too soon. Borrow what you like
+from other organizations and be transparent as your org evolves. It is
+easy to let this be a critical stumbling block of not moving forward.
+
+Rule 3 -- Be welcoming -- suggest this is swapped with rule 1. Be
+welcoming should be first rule because that is critical to growth, Rule
+2 -- have explicit governance and Rule 3 -- part of the governance is a
+code of conduct. Onboarding guidance and role of veteran members is
+great idea.
+
+Rule 4 -- This rule should really emphasize, what's in it for the
+newcomer. Newcomers must have a compelling reason to participate and
+there must be more value in doing this collaboratively than alone.
+
+Rule 5 -- See Rule 9.
+
+Rules 6 & 7 potentially combine 6&7 shortening 6 with just paragraph of
+making it easy to find.
+
+Rule 8 -- May consider meet-ups with collocated larger events as an
+option for projects. Many projects hold workshops/training/demos with
+larger conferences where their attendees may be. This rule confuses
+gaining new members as purpose with meeting face to face for governance
+or strategic direction decisions.
+
+There may be an element of marketing your project here -- are there
+slide decks, stickers, postcards etc that explain simply what your
+project does. What have successful communities done that help growth? I
+think members are empowered to champion the community and the best way
+to gain relevant newcomers is when their peers bring them in. What else
+do you do to market and grow your community? Are there virtual ways to
+do this?
+
+Rule 9 -- Suggest combining rules 5 & 9. With Rule 5 taking the lead and
+this being a subpart, installing could be an LPP.
+
+Open source projects developing code to support open science are a
+further niche to just open science projects that are not building
+infrastructure or maintaining code. The former seems to be what this
+paper is geared toward and this rule is emphasizing that. The former
+also has a 'product', the later may not have a product and with no
+product it is much harder for newcomers to find value or reasons to
+contribute. May consider clarifying the scope of these rules to open
+source, open science communities developing code or think of way to
+broaden this rule.
+
+Rule 10 -- Most of what is included here is important as part of Rule 3
+-- be welcoming.
+
+I would broaden this last rule to acknowledge ALL contributors to your
+project.
+
+Points about celebrating first contributions may fit in Rule 4 and
+points about mentoring may fit in the welcome rule or rule 6 about
+navigating the community documentation.
+
+I would recommend ending this paper on individual and collective
+acknowledgement. Citation of research objects is a new area where
+software is leading with software citation, but open science communities
+are generally not cited. Without a foundational community paper, the
+community is not getting credit.
+
+Further things to consider: How do you create a culture where peers
+acknowledge each other, that individuals contributing get credit to
+further their careers and that the project as a whole also increases its
+value and the positive reinforcement draws in new members who want to be
+associated with this work, want to use the tool, etc.
+
+**Suggested reordering and combining of rules:**
+
+Rule 3: Be welcoming.
+
+Rule 4: Help potential contributors evaluate if the project is a good
+fit. (Why contribute in the first place)
+
+Rule 2: Make governance and licensing explicit. -- Remove citation and
+include with Rule 10.
+
+Rule 6: Make knowledge findable and keep it up to date.
+
+Rule 7: Provide an easy, complete, and up-to-date guide to contributing.
+
+Rule 1: Have and enforce a code of conduct. (once you have explicit
+governance and easy to find guidance then make sure your code of conduct
+is visible). This sets the stage for contributions and participation.
+
+Rule 5: Develop forms of legitimate peripheral participation
+
+Rule 9: Make it easy for newcomers to set up.
+
+Rule 8: Use opportunities for in-person interaction, but with care. (Let
+everyone feel like a project ambassador/owner);
+
+Rule 10: Follow up on success. (Broaden to acknowledge ALL
+contributions)
+
+With this combination of rules, it leaves space for potentially a few
+additions. I would suggest considering rules on failures in the
+community or newcomer failures. The authors may also think about a rule
+on evaluation of community? How do you know if you are successful? Is it
+just \# of newcomers or sustaining membership beyond the newcomer phase
+or sustaining the project. This is an evolving area of research, but
+would be good to flag that more is not always better.
