@@ -1,5 +1,6 @@
 \documentclass[10pt,letterpaper]{article}
 \include{settings}
+\usepackage{tcolorbox}
 
 \newcommand{\rulemajor}[1]{\section*{#1}}
 \newcommand{\withurl}[2]{{#1}\footnote{{\texttt{#2}}}}
@@ -218,7 +219,7 @@ in specific areas.
 
 The second model formalizes a consensus-building process
 in which the whole community can take part.
-One example is Martha's Rules~\cite{minahan1986} (summarized in the appendix),
+One example is Martha's Rules~\cite{minahan1986} (Figure~\ref{marthas-rules}),
 under which anyone can put forward proposals,
 but those proposals are only adopted once it is clear that most people are not strongly opposed.
 The third model is based on elected representation.
@@ -512,8 +513,8 @@ The conversations with individuals should in most cases be confidential,
 but making the conclusions and corrective actions public
 is the best possible way to signal that you are serious about building the best community you can.
 
-\section*{Appendix: Martha's Rules}
-
+\begin{figure}[h]
+\begin{tcolorbox}
 \begin{enumerate}
 
 \item
@@ -550,6 +551,10 @@ is the best possible way to signal that you are serious about building the best 
   Otherwise, the proposal is returned to the sponsor for further work.
 
 \end{enumerate}
+\caption{Martha's Rules}
+\label{marthas-rules}
+\end{tcolorbox}
+\end{figure}
 
 \bibliography{10-newcomers}
 
