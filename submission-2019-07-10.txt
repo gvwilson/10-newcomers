@@ -1,0 +1,51 @@
+July 10, 2019
+
+To whom it may concern,
+
+Please find attached a revision to our paper "Ten Simple Rules for Helping Newcomers Become Contributors to Open Source Projects". We are very grateful for the comments made by Reviewer #1 (Erin Robinson), and have incorporated most of them in this revision (see below).  We have also replaced the appendix with a figure as requested earlier today.
+
+Sincerely,
+
+Dan Sholler, Igor Steinmacher, Denae Ford, Mara Averick, Mike Hoye, and Greg Wilson
+
+gvwilson@third-bit.com
+
+- "Suggested reordering and combining of rules:"
+
+Agreed; rules have been reorganized largely as suggested.
+
+- "Rule 1: Code of conduct is important..."
+
+Reorganized as suggested.
+
+- "Rule 2 -- Make governance explicit is a good point, but muddied with citation and licensing."
+
+Agreed - separated.
+
+- "Would shy away from benevolent dictators as part of any governance"
+
+We have kept the description, since it is a common model, but have explained its weaknesses.
+
+- "Rule 3 -- Be welcoming -- suggest this is swapped with rule 1."
+
+Agreed.
+
+- "Rule 4 -- This rule should really emphasize, what's in it for the newcomer."
+
+Now incorporated in Rule 2 after reorganization suggested by reviewer.
+
+- "Rule 8 -- May consider meet-ups with collocated larger events as an option for projects."
+
+Good point :-)
+
+- "Rule 10 -- Most of what is included here is important as part of Rule 3."
+
+Agreed.
+
+- "I would broaden this last rule to acknowledge ALL contributors to your project."
+
+Good catch.
+
+- "I would recommend ending this paper on individual and collective acknowledgement."
+
+We have instead opted to end on "follow up", since that's the point at which being a newcomer ends and being a regular contributor begins.

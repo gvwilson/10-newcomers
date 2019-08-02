@@ -1,6 +1,105 @@
 \documentclass[10pt,letterpaper]{article}
-\include{settings}
+
+%------------------------------------------------------------
+
+\usepackage[top=0.85in,left=2.75in,footskip=0.75in]{geometry}
+
+% amsmath and amssymb packages, useful for mathematical formulas and symbols
+\usepackage{amsmath,amssymb}
+
+% Use adjustwidth environment to exceed column width (see example table in text)
+\usepackage{changepage}
+
+% Use Unicode characters when possible
+\usepackage[utf8x]{inputenc}
+
+% textcomp package and marvosym package for additional characters
+\usepackage{textcomp,marvosym}
+
+% cite package, to clean up citations in the main text. Do not remove.
+\usepackage{cite}
+
+% Use nameref to cite supporting information files (see Supporting Information section for more info)
+\usepackage{nameref,hyperref}
+
+% line numbers
+\usepackage[right]{lineno}
+
+% ligatures disabled
+\usepackage{microtype}
+\DisableLigatures[f]{encoding = *, family = * }
+
+% color can be used to apply background shading to table cells only
+\usepackage[table]{xcolor}
+
+% array package and thick rules for tables
+\usepackage{array}
+
+% enumerate package lets us use letters instead of numbers
+\usepackage{enumerate}
+
+% create "+" rule type for thick vertical lines
+\newcolumntype{+}{!{\vrule width 2pt}}
+
+% create \thickcline for thick horizontal lines of variable length
+\newlength\savedwidth
+\newcommand\thickcline[1]{%
+  \noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+  \cline{#1}%
+  \noalign{\vskip\arrayrulewidth}%
+  \noalign{\global\arrayrulewidth\savedwidth}%
+}
+
+% \thickhline command for thick horizontal lines that span the table
+\newcommand\thickhline{\noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+\hline
+\noalign{\global\arrayrulewidth\savedwidth}}
+
+\usepackage{color}
+
+% Remove comment for double spacing
+%\usepackage{setspace}
+%\doublespacing
+
+% Text layout
+\raggedright
+\setlength{\parindent}{0.5cm}
+\textwidth 5.25in
+\textheight 8.75in
+
+% Bold the 'Figure #' in the caption and separate it from the title/caption with a period
+% Captions will be left justified
+\usepackage[aboveskip=1pt,labelfont=bf,labelsep=period,justification=raggedright,singlelinecheck=off]{caption}
+\renewcommand{\figurename}{Fig}
+
+% Use the PLoS provided BiBTeX style
+\bibliographystyle{plos2015}
+
+% Remove brackets from numbering in List of References
+\makeatletter
+\renewcommand{\@biblabel}[1]{\quad#1.}
+\makeatother
+
+% Leave date blank
+\date{}
+
+% Header and Footer with logo
+\usepackage{lastpage,fancyhdr,graphicx}
+\usepackage{epstopdf}
+\pagestyle{myheadings}
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{27.023pt}
+% \lhead{\includegraphics[width=2.0in]{PLOS-submission.eps}}
+\rfoot{\thepage/\pageref{LastPage}}
+\renewcommand{\footrule}{\hrule height 2pt \vspace{2mm}}
+\fancyheadoffset[L]{2.25in}
+\fancyfootoffset[L]{2.25in}
+\lfoot{\sf PLOS}
+
 \usepackage{tcolorbox}
+
+%------------------------------------------------------------
 
 \newcommand{\rulemajor}[1]{\section*{#1}}
 \newcommand{\withurl}[2]{{#1}\footnote{{\texttt{#2}}}}
@@ -556,6 +655,291 @@ is the best possible way to signal that you are serious about building the best 
 \end{tcolorbox}
 \end{figure}
 
-\bibliography{10-newcomers}
+% \bibliography{10-newcomers}
+
+\begin{thebibliography}{10}
+
+\bibitem{qureshi2011}
+Qureshi I, Fang Y.
+\newblock Socialization in open source software projects: A growth mixture
+  modeling approach.
+\newblock Organizational Research Methods. 2011;14(1):208--238.
+
+\bibitem{lave1991}
+Lave J, Wenger E.
+\newblock Situated Learning: Legitimate Peripheral Participation.
+\newblock Cambridge University Press; 1991.
+
+\bibitem{wenger1999}
+Wenger E.
+\newblock Communities of Practice: Learning, Meaning, and Identity.
+\newblock Cambridge University Press; 1999.
+
+\bibitem{brown2019}
+Brown CT. Sustaining open source: thinking about communities of effort;
+  Accessed March 21, 2019.
+\newblock http://ivory.idyll.org/blog/author/c-titus-brown.html.
+
+\bibitem{mozilla}
+{Mozilla Foundation}. Mozilla Firefox; Accessed March 21, 2019.
+\newblock https://www.mozilla.org/en-US/.
+
+\bibitem{fogel2005}
+Fogel K.
+\newblock Producing Open Source Software: How to Run a Successful Free Software
+  Project.
+\newblock O'Reilly Media; 2005.
+
+\bibitem{singh2012}
+Singh V.
+\newblock Newcomer integration and learning in technical support communities
+  for open source software.
+\newblock In: Proc.\ 2012 {ACM} International Conference on Supporting Group
+  Work - {GROUP'12}. {ACM} Press; 2012.
+
+\bibitem{steinmacher2013}
+Steinmacher I, Wiese I, Chaves AP, Gerosa MA.
+\newblock Why do newcomers abandon open source software projects?
+\newblock In: Proc.\ 2013 International Workshop on Cooperative and Human
+  Aspects of Software Engineering ({CHASE'13}). Institute of Electrical and
+  Electronics Engineers ({IEEE}); 2013.
+
+\bibitem{steinmacher2018a}
+Steinmacher I, Pinto G, Wiese IS, Gerosa MA.
+\newblock Almost There: A Study on Quasi-Contributors in Open-Source Software
+  Projects.
+\newblock In: Proc.\ 2018 International Conference on Software Engineering
+  ({ICSE'18}). {ACM} Press; 2018.
+
+\bibitem{libreoffice-filtered}
+{The Document Foundation}. LibreOffice Easy Hacks by Required Skill; Accessed
+  March 21, 2019.
+\newblock
+  https://wiki.documentfoundation.org/Development/EasyHacks/by\_Required\_Skill.
+
+\bibitem{my-github-resume}
+Coallier D. My GitHub Resume; Accessed March 21, 2019.
+\newblock https://resume.github.io/.
+
+\bibitem{sarma2016}
+Sarma A, Chen X, Kuttal S, Dabbish L, Wang Z.
+\newblock Hiring in the Global Stage: Profiles of Online Contributions.
+\newblock In: Proc.\ 2016 {IEEE} International Conference on Global Software
+  Engineering. ICGSE 2016. Institute of Electrical and Electronics Engineers
+  ({IEEE}); 2016.
+
+\bibitem{openhatch}
+OpenHatch; Accessed March 27 2019.
+\newblock http://openhatch.org/.
+
+\bibitem{raymond2001}
+Raymond ES. The Cathedral and the Bazaar; 2001.
+
+\bibitem{bezroukov1999}
+Bezroukov N. A Second Look at the Cathedral and the Bazaar; 1999.
+\newblock https://firstmonday.org/article/view/708/618.
+
+\bibitem{freeman1972}
+Freeman J.
+\newblock The Tyranny of Structurelessness.
+\newblock The Second Wave. 1972;2(1).
+
+\bibitem{psf-bylaws}
+Python Software Foundation Bylaws; Accessed February 16, 2019.
+\newblock https://www.python.org/psf/bylaws/.
+
+\bibitem{minahan1986}
+Minahan A.
+\newblock Martha's Rules.
+\newblock Affilia. 1986;1(2):53--56.
+\newblock doi:{10.1177/088610998600100206}.
+
+\bibitem{carpentries-bylaws}
+The Carpentries Bylaws; Accessed February 16, 2019.
+\newblock https://docs.carpentries.org/topic\_folders/governance/index.html.
+
+\bibitem{apache-governance}
+{Apache Software Foundation}. The Apache Software Foundation: How It Works;
+  Accessed March 27, 2019.
+\newblock https://www-us.apache.org/foundation/how-it-works.html.
+
+\bibitem{dagenais2010}
+Dagenais B, Ossher H, Bellamy RKE, Robillard MP, de~Vries JP.
+\newblock Moving Into a New Software Project Landscape.
+\newblock In: Proc.\ 2010 International Conference on Software Engineering
+  ({ICSE'10}). {ACM} Press; 2010.
+
+\bibitem{steinmacher2016}
+Steinmacher I, Conte TU, Treude C, Gerosa MA.
+\newblock Overcoming open source project entry barriers with a portal for
+  newcomers.
+\newblock In: Proc.\ 2016 International Conference on Software Engineering
+  ({ICSE'16}). {ACM} Press; 2016.
+
+\bibitem{github-rec}
+GitHub. Setting Guidelines for Repository Contributors; Accessed February 16,
+  2019.
+\newblock https://help.github.com/articles/setting-guidelines-for-repository-
+  contributors/.
+
+\bibitem{apache-guidelines}
+{Apache Software Foundation}. Introduction to Contributing to Apache
+  OpenOffice; Accessed February 16, 2019.
+\newblock https://openoffice.apache.org/orientation/intro-contributing.html.
+
+\bibitem{ropensci-guidelines}
+rOpenSci Packages: Develpoment, Maintenance, and Peer Review; Accessed February
+  16, 2019.
+\newblock https://ropensci.github.io/dev\_guide/.
+
+\bibitem{gnome-newcomers}
+GNOME Newcomers' Guide; Accessed February 16, 2019.
+\newblock https://wiki.gnome.org/Newcomers/SubmitContribution.
+
+\bibitem{zanatta2017}
+Zanatta AL, Steinmacher I, Machado LS, de~Souza CRB, Prikladnicki R.
+\newblock Barriers Faced by Newcomers to Software-Crowdsourcing Projects.
+\newblock {IEEE} Software. 2017;34(2):37--43.
+\newblock doi:{10.1109/ms.2017.32}.
+
+\bibitem{tourani2017}
+Tourani P, Adams B, Serebrenik A.
+\newblock Code of Conduct in Open Source Projects.
+\newblock In: Proc.\ 2017 International Conference on Software Analysis,
+  Evolution and Reengineering ({SANER'17}). {IEEE}; 2017.
+
+\bibitem{ropensci-coc}
+rOpenSci Code of Conduct; Accessed February 14, 2019.
+\newblock https://ropensci.org/code-of-conduct/.
+
+\bibitem{numpy-coc}
+{SciPy Community}. NumPy Code of Conduct; Accessed February 14, 2019.
+\newblock https://www.numpy.org/devdocs/dev/conduct/code\_of\_conduct.html.
+
+\bibitem{jupyter-coc}
+{Project Jupyter}. Code of Conduct; Accessed February 14, 2019.
+\newblock
+  https://github.com/jupyter/governance/blob/master/conduct/code\_of\_conduct.md.
+
+\bibitem{covenant}
+Contributor Covenant; Accessed February 14, 2019.
+\newblock https://www.contributor-covenant.org/.
+
+\bibitem{scipy-coc}
+SciPy Code of Conduct; Accessed February 14, 2019.
+\newblock
+  https://docs.scipy.org/doc/scipy/reference/dev/conduct/code\_of\_conduct.html.
+
+\bibitem{aurora2019}
+Aurora V, Gardiner M.
+\newblock How to Respond to Code of Conduct Reports.
+\newblock Version 1.1 ed. Frame Shift Consulting LLC; 2019.
+
+\bibitem{steinmacher2015}
+Steinmacher I, Conte T, Gerosa MA, Redmiles D.
+\newblock Social Barriers Faced by Newcomers Placing Their First Contribution
+  in Open Source Software Projects.
+\newblock In: Proc.\ 2015 {ACM} Conference on Computer Supported Cooperative
+  Work {\&} Social Computing. CSCW 2015. {ACM} Press; 2015.
+
+\bibitem{ford2016}
+Ford D, Smith J, Guo PJ, Parnin C.
+\newblock Paradise Unplugged: Identifying Barriers for Female Participation on
+  Stack Overflow.
+\newblock In: Proc.\ 2016 ACM SIGSOFT International Symposium on Foundations of
+  Software Engineering ({FSE'16}). FSE 2016. {ACM} Press; 2016. p. 846--857.
+
+\bibitem{baltes2018}
+Baltes S, Dumani L, Treude C, Diehl S.
+\newblock The Evolution of Stack Overflow Posts: Reconstruction and Analysis.
+\newblock CoRR. 2018;abs/1811.00804.
+
+\bibitem{ford2018}
+Ford D, Lustig K, Banks J, Parnin C.
+\newblock "We Don't Do That Here": How Collaborative Editing with Mentors
+  Improves Engagement in Social {Q\&A} Communities.
+\newblock In: Proc.\ 2018 CHI Conference on Human Factors in Computing Systems.
+  CHI 2018; 2018. p. 608:1--608:12.
+
+\bibitem{steinmacher2014}
+Steinmacher I, Wiese I, Conte T, Gerosa M, Redmiles D.
+\newblock The Hard Life of Open Source Software Project Newcomers.
+\newblock In: Proc.\ 2014 International Workshop on Cooperative and Human
+  Aspects of Software Engineering ({CHASE'14}). {ACM} Press; 2014.
+
+\bibitem{steinmacher2018b}
+Steinmacher I, Treude C, Gerosa MA.
+\newblock Let Me In: Guidelines for the Successful Onboarding of Newcomers to
+  Open Source Projects.
+\newblock {IEEE} Software. 2018;doi:{10.1109/MS.2018.110162131}.
+
+\bibitem{doherty1997}
+Doherty-Sneddon G, O{\textquotesingle}Malley C, Garrod S, Anderson A, et~al.
+\newblock Face-to-face and video-mediated communication: A comparison of
+  dialogue structure and task performance.
+\newblock Journal of Experimental Psychology: Applied. 1997;3(2):105--125.
+\newblock doi:{10.1037/1076-898x.3.2.105}.
+
+\bibitem{gallupe1990}
+Gallupe RB, McKeen JD.
+\newblock Enhancing Computer-Mediated Communication: An experimental
+  investigation into the use of a Group Decision Support System for
+  face-to-face versus remote meetings.
+\newblock Information {\&} Management. 1990;18(1):1--13.
+\newblock doi:{10.1016/0378-7206(90)90059-q}.
+
+\bibitem{nardi2002}
+Nardi BA, Whittaker S.
+\newblock The place of face-to-face communication in distributed work.
+\newblock In: Hinds P, Kiesler S, editors. Distributed Work. {MIT} Press; 2002.
+  p. 83--110.
+
+\bibitem{omalley1996}
+O'Malley C, Langton S, Anderson A, Doherty-Sneddon G, Bruce V.
+\newblock Comparison of face-to-face and video-mediated interaction.
+\newblock Interacting with Computers. 1996;8(2):177--192.
+\newblock doi:{10.1016/0953-5438(96)01027-2}.
+
+\bibitem{huppenkothen2018}
+Huppenkothen D, Arendt A, Hogg DW, Ram K, VanderPlas JT, Rokem A.
+\newblock Hack weeks as a model for data science education and collaboration.
+\newblock Proc\ National Academy of Sciences. 2018;115(36):8872--8877.
+\newblock doi:{10.1073/pnas.1717196115}.
+
+\bibitem{cherubini2007}
+Cherubini M, Venolia G, DeLine R, Ko AJ.
+\newblock Let's Go to the Whiteboard: How and Why Software Developers Use
+  Drawings.
+\newblock In: Proc.\ 2007 Conference on Human Factors in Computing Systems
+  ({CHI'07}). Association for Computing Machinery ({ACM}); 2007.
+
+\bibitem{fagerholm2014}
+Fagerholm F, Guinea AS, M\"{u}nch J, Borenstein J.
+\newblock The role of mentoring and project characteristics for onboarding in
+  open source software projects.
+\newblock In: Proc.\ 2014 International Symposium on Empirical Software
+  Engineering and Measurement ({ESEM'14}). {ACM} Press; 2014.
+
+\bibitem{labuschagne2015}
+Labuschagne A, Holmes R.
+\newblock Do Onboarding Programs Work?
+\newblock In: Proc.\ 2015 Working Conference on Mining Software Repositories
+  ({MSR'15}). {IEEE}; 2015.
+
+\bibitem{barcomb2019}
+Barcomb A, Stol KJ, Riehle D, Fitzgerald B.
+\newblock Why Do Episodic Volunteers Stay in FLOSS Communities?
+\newblock In: Proc.\ 2019 International Conference on Software Engineering
+  ({ICSE'19}). {ACM} Press; 2019.
+
+\bibitem{maenpaa2018}
+M\"{a}enp\"{a}\"{a} H, M\"{a}kinen S, Kilamo T, Mikkonen T, M\"{a}nnist\"{o} T,
+  Ritala P.
+\newblock Organizing for openness: six models for developer involvement in
+  hybrid {OSS} projects.
+\newblock Journal of Internet Services and Applications. 2018;9(1).
+\newblock doi:{10.1186/s13174-018-0088-1}.
+
+\end{thebibliography}
 
 \end{document}
