@@ -1,0 +1,12 @@
+1. Reformatted authors' affiliations.
+   - Please note that the link in the Word document to the example 404's.
+
+2. I confirm that there was no funding for this work.
+
+3. I have removed the Abstract and Author Summary.
+
+4. I have moved the Acknowledgments to be just prior to the References.
+
+5. We have turned the bullet list in Rule 1 into prose, but decided to leave the list in Rule 3 as-is.
+
+6. The "figure" is text, so I have inlined it.
