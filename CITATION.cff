@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "Please cite this paper as shown."
+authors:
+- family-names: "Sholler"
+  given-names: "Dan"
+  orcid: ""
+- family-names: "Steinmacher"
+  given-names: "Igor"
+  orcid: ""
+- family-names: "Ford"
+  given-names: "Denae"
+  orcid: ""
+- family-names: "Averick"
+  given-names: "Mara"
+  orcid: ""
+- family-names: "Hoye"
+  given-names: "Mike"
+  orcid: ""
+- family-names: "Wilson"
+  given-names: "Greg"
+  orcid: "https://orcid.org/0000-0001-8659-8979"
+title: "Ten simple rules for helping newcomers become contributors to open projects"
+preferred-citation:
+  type: article
+  authors:
+  - family-names: "Sholler"
+    given-names: "Dan"
+    orcid: ""
+  - family-names: "Steinmacher"
+    given-names: "Igor"
+    orcid: ""
+  - family-names: "Ford"
+    given-names: "Denae"
+    orcid: ""
+  - family-names: "Averick"
+    given-names: "Mara"
+    orcid: ""
+  - family-names: "Hoye"
+    given-names: "Mike"
+    orcid: ""
+  - family-names: "Wilson"
+    given-names: "Greg"
+    orcid: "https://orcid.org/0000-0001-8659-8979"
+  title: "Ten simple rules for helping newcomers become contributors to open projects"
+  doi: "10.1371/journal.pcbi.1007296"
+  journal: "PLOS Computational Biology"
+  volume: 15
+  issue: 9
+  year: 2019
+  month: 9
