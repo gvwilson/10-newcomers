@@ -3,7 +3,7 @@ message: "Please cite this paper as shown."
 authors:
 - family-names: "Sholler"
   given-names: "Dan"
-  orcid: ""
+  orcid: "https://orcid.org/0000-0003-2517-4317"
 - family-names: "Steinmacher"
   given-names: "Igor"
   orcid: "https://orcid.org/0000-0002-0612-5790"
@@ -25,7 +25,7 @@ preferred-citation:
   authors:
   - family-names: "Sholler"
     given-names: "Dan"
-    orcid: ""
+    orcid: "https://orcid.org/0000-0003-2517-4317"
   - family-names: "Steinmacher"
     given-names: "Igor"
     orcid: "https://orcid.org/0000-0002-0612-5790"
